@@ -106,7 +106,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="ideas.html"><a href="ideas.html#and-where-i-do-this"><i class="fa fa-check"></i>And where I do this?</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html"><i class="fa fa-check"></i>First steps</a><ul>
-<li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#yaml"><i class="fa fa-check"></i>YAML</a></li>
+<li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#yaml-header"><i class="fa fa-check"></i>YAML header</a></li>
+<li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#basic-things-in-markdown"><i class="fa fa-check"></i>Basic things in Markdown</a></li>
 </ul></li>
 </ul>
 
@@ -128,8 +129,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="first-steps" class="section level1 unnumbered">
 <h1>First steps</h1>
 <hr />
-<p>If you are using a editor that’s not <a href="https://www.rstudio.com/">RStudio</a>, you need to create a file with the extention .rmd and open the file is this editor (or create the file in the editor and save with this extentio, the final result is the same).</p>
-<p>You can do this also in RStudio, but, RStudio provides to you another way.</p>
+<p>If you are using a editor that’s not <a href="https://www.rstudio.com/">RStudio</a>, you need to create a file with the extention .Rmd and open the file is this editor (or create the file in the editor and save with this extention, the final result is the same).</p>
+<p>You can do this also in RStudio, but RStudio provide to you another way. In the first menu option (first option in the up left), you have the options to easily create a Rmd file (and others types of files and applications<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>).</p>
 <hr />
 <p><strong>Important</strong></p>
 <blockquote>
@@ -140,9 +141,35 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <p>And to load:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(<span class="st">&quot;rmarkdown&quot;</span>)</code></pre></div>
 <hr />
-<p>In RStudio, in the first menu option (first option in the up left), you have the options to easily create a rmd file (and others types of files and applications<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>).</p>
-<div id="yaml" class="section level2 unnumbered">
-<h2>YAML</h2>
+<div id="yaml-header" class="section level2 unnumbered">
+<h2>YAML header</h2>
+<p>In simple documents you don’t need to create or use a YAML header, but in general is a good thing to do.</p>
+<p><strong>YAML</strong>:</p>
+<p><em>A YAML header explains what type of document to build from your R Markdown file.</em></p>
+<blockquote>
+<p><strong>A YAML header is a set of key: value pairs at the start of your file. Begin and end the header with a line of three dashes (- - -).</strong></p>
+</blockquote>
+<p>Example:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">___
+title<span class="op">:</span><span class="st"> &quot;My first R Markdown document&quot;</span>
+author<span class="op">:</span><span class="st"> &quot;Muhammad Lee&quot;</span>
+output<span class="op">:</span><span class="st"> </span>htm_document
+___</code></pre></div>
+<p>Everything that you write inside the YAML is called “metadata”.</p>
+<p>The output value determines which type of file R will build from your .Rmd file:</p>
+<ul>
+<li><strong>output: html_document</strong> <span class="math inline">\(\Rightarrow\)</span> html file (web page)</li>
+<li><strong>output: pdf_document</strong> <span class="math inline">\(\Rightarrow\)</span> pdf document</li>
+<li><strong>output: word_document</strong> <span class="math inline">\(\Rightarrow\)</span> Microsoft Word .docx</li>
+<li><strong>output: beamer_document</strong> <span class="math inline">\(\Rightarrow\)</span> beamer slideshow (pdf)</li>
+<li><strong>output: ioslides_document</strong> <span class="math inline">\(\Rightarrow\)</span> ioslides slideshow (html)</li>
+</ul>
+<blockquote>
+<p><strong>Here <a href="http://rmarkdown.rstudio.com/html_document_format.html">HTML</a> and here <a href="http://rmarkdown.rstudio.com/pdf_document_format.html">PDF</a> you can found several available YAML options for html and pdf documents.</strong></p>
+</blockquote>
+</div>
+<div id="basic-things-in-markdown" class="section level2 unnumbered">
+<h2>Basic things in Markdown</h2>
 
 </div>
 </div>
@@ -205,6 +232,17 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

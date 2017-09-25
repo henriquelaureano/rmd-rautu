@@ -106,7 +106,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="" data-path="ideas.html"><a href="ideas.html#and-where-i-do-this"><i class="fa fa-check"></i>And where I do this?</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html"><i class="fa fa-check"></i>First steps</a><ul>
-<li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#yaml"><i class="fa fa-check"></i>YAML</a></li>
+<li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#yaml-header"><i class="fa fa-check"></i>YAML header</a></li>
+<li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#basic-things-in-markdown"><i class="fa fa-check"></i>Basic things in Markdown</a></li>
 </ul></li>
 </ul>
 
@@ -209,6 +210,17 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(script.src))
+      script.src  = script.src.replace(/^https?:/, '');
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
