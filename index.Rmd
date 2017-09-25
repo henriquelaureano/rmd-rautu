@@ -1,0 +1,20 @@
+--- 
+title: "Introduction to R Markdown and Knitr"
+author: "Henrique Aparecido Laureano"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+---
+
+# README {-}
+
+***
+
+**[Bayesian Computational Statistics & Modeling](https://bayescomp.kaust.edu.sa/Pages/Home.aspx)**
+
+**Professor [Haavard Rue's](https://www.kaust.edu.sa/en/study/faculty/haavard-rue) reserach group**
+
+> **You can find all this material available in [GitHub](https://github.com/mynameislaure/rmd-rautu)**
+
+***
