@@ -1,4 +1,4 @@
-# rmd-rautu: Rmd: R Markdown file; Rautu: Joke with "How to do"
+# rmd-rautu: Rmd: R Markdown; Rautu: Joke with "How to do"
 
 ### Brief introduction to R Markdown and Knitr
 
