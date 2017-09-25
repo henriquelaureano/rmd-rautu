@@ -34,6 +34,10 @@ library("rmarkdown")
 
 ## YAML header {-}
 
+[YAML](http://yaml.org/) is a human friendly data serialization standard for all
+programming languages. For each programming language you can find the respective
+YAML project.
+
 In simple documents you don't need to create or use a YAML header, but in general
 is a good thing to do.
 
@@ -69,3 +73,25 @@ The output value determines which type of file R will build from your .Rmd file:
     several available YAML options for html and pdf documents.**
 
 ## Basic things in Markdown {-}
+
+### Titles {-}
+
+If you wanna create a big title, generally the principal title of your document,
+you only need to put a # before the title (if you use the YAML option "title" you
+are already doing this).
+
+If you put a double hash mark (##) you will create a section, if put three will
+create a subsection. The maximum is four.
+
+### Lists {-}
+
+To create a list you only need to put a * or a number (1, 2, 3, ...) followed by a
+point, or a dashe, all followed by a space.
+
+### Images {-}
+
+### Links {-}
+
+### Tables {-}
+
+### LaTeX {-}
