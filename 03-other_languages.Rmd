@@ -1,0 +1,66 @@
+# Others languages {-}
+
+## LaTeX {-}
+
+You can use raw \(\LaTeX\)'s code normally in Markdown documents.
+
+If you wanna insert a \(\LaTeX\)'s code inline, you just need to insert the code
+between `\( \)` or `$ $`. Por example, `\(f(x) = x^{2}\)` will generate
+\(f(x) = x^{2}\).
+
+For insert a equation you just need to insert the code between `\[ \]` or `$$ $$`.
+Por example, `\[ f(x) = x^{2}. \]` will generate
+
+\[ f(x) = x^{2}. \]
+
+> **Everything that you do in a .tex file you are able to do into a .rmd file.**
+
+> **If you need to use a different package, you can load this package in the YAML
+     header, inserting then in this way:** 
+
+```
+header-includes:
+   - \usepackage{package_name}
+   - \usepackage{other_package}
+```
+
+*Important: To work, you have to respect the code indentation.*
+
+***
+
+## R {-}
+
+To insert R code you have to put your code into a environment called `chunk`.
+
+Before your code you need to put three ` followed by {r}. After, to close the
+environment you have to put more three.
+
+Inside the `chunk` all te code is interpreted like R code.
+
+In the RStudio you already have a button to insert chunks. 
+
+Into the chunk, after the letter r that you have to put, you can insert several
+options. Por example, if you don't wanna that the source code appear, use the
+option `echo=FALSE`. You wanna that the code appear but not the result?
+`results='hide'`. You have options for resize images, image captions, etc.
+
+You have several options for several things.
+
+All this options make part of `Knitr`, this will be shown in the next section.
+
+[Here](https://yihui.name/knitr/options/) you can see an list with all this options
+and how to use them.
+
+## Other {-}
+
+For insert other languages, the procedure is exactly the same that for R.
+
+* If you wanna insert Bash code, you have to put {bash};
+
+* Python code? Put {python};
+
+* SQL? Put {sql};
+
+* Stan? Put {stan};
+
+* Etc.

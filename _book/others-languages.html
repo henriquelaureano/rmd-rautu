@@ -25,14 +25,14 @@
 <meta name="author" content="Henrique Aparecido Laureano">
 
 
-<meta name="date" content="2017-09-25">
+<meta name="date" content="2017-09-26">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="latex.html">
+<link rel="prev" href="first-steps.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -78,8 +78,11 @@
 <li class="chapter" data-level="" data-path="first-steps.html"><a href="first-steps.html#tables"><i class="fa fa-check"></i>Tables</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="" data-path="latex.html"><a href="latex.html"><i class="fa fa-check"></i>LaTeX</a></li>
-<li class="chapter" data-level="" data-path="r.html"><a href="r.html"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="others-languages.html"><a href="others-languages.html"><i class="fa fa-check"></i>Others languages</a><ul>
+<li class="chapter" data-level="" data-path="others-languages.html"><a href="others-languages.html#latex"><i class="fa fa-check"></i>LaTeX</a></li>
+<li class="chapter" data-level="" data-path="others-languages.html"><a href="others-languages.html#r"><i class="fa fa-check"></i>R</a></li>
+<li class="chapter" data-level="" data-path="others-languages.html"><a href="others-languages.html#other"><i class="fa fa-check"></i>Other</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -97,19 +100,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="r" class="section level1 unnumbered">
-<h1>R</h1>
+<div id="others-languages" class="section level1 unnumbered">
+<h1>Others languages</h1>
+<div id="latex" class="section level2 unnumbered">
+<h2>LaTeX</h2>
+<p>You can use raw <span class="math inline">\(\LaTeX\)</span>’s code normally in Markdown documents.</p>
+<p>If you wanna insert a <span class="math inline">\(\LaTeX\)</span>’s code inline, you just need to insert the code between <code>\( \)</code> or <code>$ $</code>. Por example, <code>\(f(x) = x^{2}\)</code> will generate <span class="math inline">\(f(x) = x^{2}\)</span>.</p>
+<p>For insert a equation you just need to insert the code between <code>\[ \]</code> or <code>$$ $$</code>. Por example, <code>\[ f(x) = x^{2}. \]</code> will generate</p>
+<p><span class="math display">\[ f(x) = x^{2}. \]</span></p>
+<blockquote>
+<p><strong>Everything that you do in a .tex file you are able to do into a .rmd file.</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>If you need to use a different package, you can load this package in the YAML header, inserting then in this way:</strong></p>
+</blockquote>
+<pre><code>header-includes:
+   - \usepackage{package_name}
+   - \usepackage{other_package}</code></pre>
+<p><em>Important: To work, you have to respect the code indentation.</em></p>
+<hr />
+</div>
+<div id="r" class="section level2 unnumbered">
+<h2>R</h2>
 <p>To insert R code you have to put your code into a environment called <code>chunk</code>.</p>
-<p>Before your code you need to put three <code>followed by {r}. After, to close the environment you have to put more three</code>.</p>
+<p>Before your code you need to put three ` followed by {r}. After, to close the environment you have to put more three.</p>
 <p>Inside the <code>chunk</code> all te code is interpreted like R code.</p>
+<p>In the RStudio you already have a button to insert chunks.</p>
+<p>Into the chunk, after the letter r that you have to put, you can insert several options. Por example, if you don’t wanna that the source code appear, use the option <code>echo=FALSE</code>. You wanna that the code appear but not the result? <code>results='hide'</code>. You have options for resize images, image captions, etc.</p>
+<p>You have several options for several things.</p>
+<p>All this options make part of <code>Knitr</code>, this will be shown in the next section.</p>
+<p><a href="https://yihui.name/knitr/options/">Here</a> you can see an list with all this options and how to use them.</p>
+</div>
+<div id="other" class="section level2 unnumbered">
+<h2>Other</h2>
+<p>For insert other languages, the procedure is exactly the same that for R.</p>
+<ul>
+<li><p>If you wanna insert Bash code, you have to put {bash};</p></li>
+<li><p>Python code? Put {python};</p></li>
+<li><p>SQL? Put {sql};</p></li>
+<li><p>Stan? Put {stan};</p></li>
+<li><p>Etc.</p></li>
+</ul>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="latex.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="first-steps.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
     </div>
   </div>
