@@ -90,8 +90,26 @@ point, or a dashe, all followed by a space.
 
 ### Images {-}
 
+To insert a image you need to use the command `![](~/path/of/the/image.jpg)`.
+
 ### Links {-}
+
+To create a link you have to use
+`[Desired link name](http://www.desired-address.com)`.
 
 ### Tables {-}
 
-### LaTeX {-}
+Create a table in Markdown isn't complicated, but you still can use a online
+table generator. In this way you can see the results of your table in real time
+and copy after the code to your file. 
+
+In the internet you can find several, like 
+[this](http://www.tablesgenerator.com/markdown_tables).
+
+***
+
+> **Searching for "markdown tutorial" in [Google](http://www.google.com) you can
+    find easily several pages showing how create other things in Markdown, like
+    how to put phrases in italic, bold, blockquotes, etc.**
+
+> **In Markown you can also insert \(\LaTeX\) and HTML raw code.**
