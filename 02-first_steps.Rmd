@@ -1,0 +1,37 @@
+# First steps {-}
+
+***
+
+If you are using a editor that's not [RStudio](https://www.rstudio.com/), you need
+to create a file with the extention .rmd and open the file is this editor (or 
+create the file in the editor and save with this extentio, the final result is the
+same).
+
+You can do this also in RStudio, but, RStudio provides to you another way.
+
+***
+
+**Important**
+
+> **To use all the R Markdown features you need the R package `rmarkdown`.**
+
+To install the package you only need to run:
+
+```{r, eval=FALSE}
+install.packages("rmarkdown")
+```
+
+And to load:
+
+```{r, eval=FALSE}
+library("rmarkdown")
+```
+
+***
+
+In RStudio, in the first menu option (first option in the up left), you have the
+options to easily create a rmd file (and others types of files and 
+applications^[Take some time to discovery by yourself this things. Is very simple 
+and intuitive.]).
+
+## YAML {-}
