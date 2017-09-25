@@ -1,0 +1,6 @@
+# Knitr {-}
+
+```
+The knitr package was designed to be a transparent engine for dynamic report
+generation with R, and solve some long-standing problems in Sweave.
+```

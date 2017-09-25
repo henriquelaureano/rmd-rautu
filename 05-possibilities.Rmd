@@ -1,0 +1,11 @@
+# Other possibilities {-}
+
+With R Markdown (and RStudio), you are also able to do:
+
+* Packages;
+
+* Books (package `bookdown`): This document was created with this package;
+
+* Blogs (package `blogdown`);
+
+* Conect with Git and GitHub.
