@@ -4,3 +4,30 @@
 The knitr package was designed to be a transparent engine for dynamic report
 generation with R, and solve some long-standing problems in Sweave.
 ```
+
+If you are working in a .tex file but wanna insert R code,
+[Knitr](https://yihui.name/knitr/) is a very good alternative.
+
+This extention is .Rnw.
+
+In a .Rnw file, by default, everything that you write is interpreted as in a .tex file. In reality, you do everything like in a \(\LaTeX\) document. The only
+difference is wanna you want insert R code.
+
+For insert R code you have to create a `chunk` like this:
+
+```
+<<>>=
+
+@
+```
+
+Everything typed outside a `chunk` is rendered as \(\LaTeX\) code, everything 
+inside a `chunk` is rendered as R code.
+
+The same chunk options shown in the previous section can be used here. In reality,
+all this options was created to use in a .Rnw file.
+
+[Here](https://yihui.name/knitr/options/) you can see an list with all this options
+and how to use them.
+
+***
