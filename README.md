@@ -1,6 +1,7 @@
 # rmd-rautu
 
 > **rmd: R Markdown**
+
 > **rautu: joke with "how to do"**
 
 ![](screen_shot.png)
