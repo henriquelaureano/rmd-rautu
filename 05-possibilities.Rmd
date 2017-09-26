@@ -2,10 +2,12 @@
 
 With R Markdown (and RStudio), you are also able to do:
 
-* Packages;
+* [Books](https://bookdown.org/yihui/bookdown/) (package `bookdown`):
+  This document was created with this package;
 
-* Books (package `bookdown`): This document was created with this package;
+* [Blogs](https://bookdown.org/yihui/blogdown/) (package `blogdown`);
 
-* Blogs (package `blogdown`);
+* [Connect](https://support.rstudio.com/hc/en-us/articles/200532077-Version-Control-with-Git-and-SVN)
+  directly with Git (and SVN) and GitHub.
 
-* Conect with Git and GitHub.
+***

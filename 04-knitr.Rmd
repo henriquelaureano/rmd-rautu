@@ -1,4 +1,4 @@
-# Knitr {-}
+# knitr {-}
 
 ```
 The knitr package was designed to be a transparent engine for dynamic report
@@ -6,7 +6,7 @@ generation with R, and solve some long-standing problems in Sweave.
 ```
 
 If you are working in a .tex file but wanna insert R code,
-[Knitr](https://yihui.name/knitr/) is a very good alternative.
+[knitr](https://yihui.name/knitr/) is a very good alternative.
 
 This extention is .Rnw.
 

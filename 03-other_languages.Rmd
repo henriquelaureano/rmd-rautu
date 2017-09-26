@@ -51,6 +51,8 @@ All this options make part of `Knitr`, this will be shown in the next section.
 [Here](https://yihui.name/knitr/options/) you can see an list with all this options
 and how to use them.
 
+Inside ` followed by the letter r, you are able to insert inline R code.
+
 ## Others {-}
 
 For insert other languages, the procedure is exactly the same that for R.
